@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frero Barber - Terminbuchung</title>
+    <link rel="stylesheet" href="style.css.css">
+
+</head>
+<body>
+    <header>
+        <h1>Foox Friseur</h1>
+        <p>Ihr Friseursalon für erstklassige Pflege.</p>
+    </header>
+    <main>
+        <section class="booking-form">
+            <h2>Vereinbaren Sie Ihren Termin</h2>
+            <form id="appointment-form">
+                <label for="name">Ihr Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="time">Wählen Sie eine Uhrzeit:</label>
+                <select id="time" required>
+                    <option value="">-- Wählen Sie eine Uhrzeit --</option>
+                </select>
+                
+                <button type="submit">Jetzt buchen</button>
+            </form>
+            <div id="confirmation" class="hidden">
+                <p>Vielen Dank, <span id="user-name"></span>! Ihr Termin ist um <span id="appointment-time"></span> gebucht.</p>
+            </div>
+        </section>
+        <section class="appointments">
+            <h2>Gebaute Termine</h2>
+            <ul id="appointment-list">
+                <!-- Appointments will be listed here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Telefon: +43 676 5629970, 
+            <a href="https://www.instagram.com/foox_friseur/" target="_blank">
+             <img src="Instagram_icon.png" alt="Instagram" style="width: 30px; height: 30px;"></p>
+             
+    </footer>
+    <script src="Untitled-1.js"></script>
+</body>
+</html>
